@@ -1,0 +1,448 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(https://wallpapercave.com/wp/wp3183635.jpg);
+}
+.button{
+    border: 2px solid black;
+}
+.container{
+    padding-top: 8%;
+    height: 35vh;
+    width: 60vw;
+    margin: auto;
+    grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "mail calander internet store image image"
+    "people photos maps skydrive travle travle"
+    "massaging finance sports sports game camera"
+    "dekstop weather news news music video";
+}
+.mail{
+    height: 100px;
+    position: relative;
+    grid-area: mail;
+}
+.flipcard_mail{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s all ease ;
+    transform-style: preserve-3d;
+    background: transparent;
+    
+}
+.flipcard_mail:hover{
+    transform: rotateY(180deg);
+}
+.mail_front{
+    position: absolute;
+        height: 100%;
+        width: 100%;
+        background: #2aa0af;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        backface-visibility: hidden;
+    }
+.mail_back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background: #2aa0af;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.mail_back_p{
+        align-self: center;
+        font-size: 18px;
+}
+
+    .mail_img{
+        height: 60px;
+    }
+    .mail_p{
+        font-size: 18px;
+        color: #fff;
+        align-self: flex-start;
+        padding-left: 5px;
+        font-family: sans-serif;
+    }
+   
+    .calander{
+        background-color: #24438b;
+        grid-area: calander;
+        height: 100px;
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .calander_img{
+        height: 60px;
+    }
+    .calander_p{
+        font-size: 18px;
+        color: #fff;
+        font-family: sans-serif;
+        align-self: flex-start;
+        padding-left: 10px;
+    }
+    .internet{
+        background-color: #44aee3;
+        grid-area: internet;
+        height: 100px;
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .internet_img{
+        font-size: 18px;
+        color: #fff;
+     
+    }
+    .internet_p{
+        font-size: 18px;
+        color: #fff;
+        padding-left: 10px;
+        font-family: sans-serif;
+        justify-content:flex-start;
+    }
+
+.store{
+    background-color: #30b01c;
+    grid-area: store;
+    height: 100px;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+}
+.store_img{
+    height: 60px;
+}
+.store_p{
+    font-size: 18px;
+    color: #fff;
+    align-self: flex-start;
+    padding-left: 10px;
+}
+.image{
+    grid-area: image;
+    background-color: #44aee3;
+    background-image: url(/back\ image.png.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 100%;
+    margin-left: 9px;
+    display: flex;
+    align-items: flex-end;
+}
+.image_p{
+    font-size: 18px;
+    color: #fff;
+    padding-left: 10px;
+    margin-bottom: 5px;
+
+}
+.people{
+    background-color: rgb(236, 113, 12);
+    grid-area: people;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+    
+    }
+    
+    .people_image{
+        height: 60px;
+    }
+    .people_p{
+        font-size: 18px;
+        color: #fff;
+        padding-left: 10px;
+        margin-bottom: 5px;
+        align-self: flex-start;
+}
+.photos{
+    background-color: rgb(43, 161, 161);
+    grid-area: photos;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+}
+.photos_img{
+    height: 60px;
+}
+.photos_p{
+    font-size: 18px;
+        color: #fff;
+        padding-left: 10px;
+        margin-bottom: 5px;
+        align-self: flex-start;
+}
+.maps{
+    background-color: rgb(169, 51, 180);
+    grid-area: maps;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+}
+.maps_p{
+    font-size: 18px;
+    color: #fff;
+    padding-left: 10px; 
+    align-self: flex-start;
+}
+.skydrive{
+    background-color: #16719e;
+    grid-area: skydrive;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+}
+.skydrive_p{
+    font-size: 18px;
+    color: #fff;
+    padding-left: 5px; 
+    align-self: flex-start;
+    padding-bottom: 5px;
+}
+.travle{
+    background-color: rgb(21, 104, 104);
+    grid-area: travle;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+}
+.travle_img{
+    height: 80px;
+}
+.travle_p{
+    font-size: 18px;
+    color: #fff;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    align-self: flex-start;
+}
+.massaging{
+    background-color: rgb(139, 25, 143);
+    grid-area: massaging;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+}
+.msg_img{
+  height: 70px;
+}
+.msg_p{
+    font-size: 18px;
+    color: #fff;
+    padding-left: 5px; 
+    align-self: flex-start;
+    margin-bottom: 5px;
+}
+.finance{
+    background-color: rgb(27, 114, 19);
+    grid-area: finance;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+}
+.financ_img{
+    height: 70px;
+}
+.financ_p{
+    font-size: 18px;
+    color: #fff;
+    padding-left: 5px; 
+    align-self: flex-start;
+    margin-bottom: 5px; 
+}
+.sports{
+    background-color: rgb(184, 22, 170);
+    grid-area: sports;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+}
+.sport_img{
+    height: 70px;
+    margin-top: 5px;
+}
+.sports_p{
+    font-size: 18px;
+    color: #fff;
+    padding-left: 5px; 
+    align-self: flex-start;
+    margin-bottom: 5px; 
+}
+.game{
+    background-color: rgb(13, 100, 5);
+    grid-area: game;
+    margin-left: 9px;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+}
+.game_img{
+   height: 70px;
+}
+.game_p{
+    font-size: 18px;
+    color: #fff;
+    padding-left: 5px; 
+    align-self: flex-start;
+    margin-bottom: 5px; 
+}
+.camera{
+    background-color: rgb(173, 28, 137);
+    grid-area: camera;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+}
+.camera_p{
+    font-size: 18px;
+    color: #fff;
+    padding-left: 5px; 
+    align-self: flex-start;
+    margin-bottom: 0px; 
+}
+.dekstop{
+    grid-area: dekstop;
+    background-image: url(/deckstop.png.jfif);
+    background-size: cover;
+    background-position: center;
+}
+.weather{
+    background-color: #2aa0af;
+    grid-area: weather;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+}
+.weather_img{
+    height: 70px;
+}
+.weather_p{
+    font-size: 18px;
+    color: #fff;
+    padding-left: 5px; 
+    align-self: flex-start;
+    padding-bottom: 5px;
+}
+.news{
+    background-color: rgb(207, 23, 63);
+    grid-area: news;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+
+}
+
+.news_p{
+    font-size: 18px;
+    color: #fff;
+    padding-left: 5px; 
+    align-self: flex-start;
+}
+.music{
+    background-color: rgb(238, 81, 18);
+    grid-area: music;
+    margin-left: 9px;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+}
+.music_p{
+    font-size: 18px;
+    color: #fff;
+    padding-left: 5px; 
+    align-self: flex-start;
+}
+.video{
+    background-color: rgb(207, 23, 63);
+    grid-area: video;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+     justify-content: space-around;
+
+}
+.video_p{
+    font-size: 18px;
+    color: #fff;
+    padding-left: 5px; 
+    align-self: flex-start;
+
+}
+/* 
+@media screen and (min-width: 760px){
+   .container{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns:  1fr 1fr;
+    grid-template-rows: 1fr repeat(12);
+    grid-template-areas: 
+    "mail calander"
+    "internet store"
+    "image image"
+    "people photos"
+    "maps skydrive"
+    "travle travle"
+    "massaging finance" 
+    "sports sports" "
+    "game camera"
+    "dekstop weather" 
+    "news news" 
+    "music video";
+   }
+}
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
